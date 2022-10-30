@@ -1,0 +1,17 @@
+server:
+  port: 8081
+application:
+  name: GraphQlApps
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:C:/Users/mateu/Desktop/tutorial-master/graphql-db
+  jpa:
+    hibernate:
+      ddl-auto: create
+      generate-ddl: true
+      open-in-view: false
+
+

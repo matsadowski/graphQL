@@ -1,0 +1,23 @@
+type Query {
+    applicationById(id: ID!): Application
+    applicationByUuid(uuid: String): Application
+}
+
+type Application {
+    id: ID
+    applicationNumber: String!
+    createDate: String!
+    session: Session
+    status: String!
+}
+
+type Session {
+    id: ID
+    modificationDate: String!
+    uuid: String!
+
+}
+
+
+
+
